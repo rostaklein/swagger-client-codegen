@@ -266,7 +266,7 @@ function printUsedTypes(allTypes: Type[], usedDataTypes: string[]) {
 
 export function printClientTag(tag: ClientTag, allTypes: Type[]) {
   return `
-import API from './'
+import API from './client'
 
 import {
   ${printUsedTypes(allTypes, tag.types).join(",\n  ")}
